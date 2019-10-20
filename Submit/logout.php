@@ -1,0 +1,5 @@
+<?php
+	ssLogout();
+
+	redir("/adlogin");
+?>

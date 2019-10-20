@@ -1,0 +1,199 @@
+
+
+right-nav{
+	width: 30%;
+	padding:5px 20px;
+}
+
+popular{
+	margin:20px 0px;
+}
+
+right-head{ 
+	display: block;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    margin: 0px 10px;
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--white); 
+    font-family: 'Quicksand', sans-serif; 
+    position: relative;
+    margin-bottom: 10px;
+  	box-shadow:0px 6px 15px 0px #c1bbbb;
+	margin-left:-2px;
+	background: var(--true);
+}	
+
+
+pop-wrap{
+	margin: 10px 0px;
+}
+
+.pop-item{
+	width: 100%;
+	margin:20px 0px;
+	position: relative;
+}
+
+.pop-item img{
+	width: 100%;
+	height: 220px;
+}
+
+.pop-item pop-title{
+	position: absolute;
+	width: 100%;
+	height: 70px;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	overflow: hidden; 
+	bottom: 0px;
+	left: 0px;
+	background: #00000061;
+	color: white;
+	font-size: 18px;
+	text-align: justify;
+	padding: 5px 10px;
+	font-weight: bold;
+	font-family: 'Quicksand', sans-serif;
+	transition:height 0.5s ease;
+}
+
+.pop-item:hover pop-title{
+	height: 120px;
+	text-overflow:none;
+	white-space: normal;
+	overflow: none;
+	transition:height 0.5s ease;
+}
+
+.pop-item:hover img{
+	opacity: 0.8;
+}
+
+.pop-item date{
+	position: absolute;
+	bottom: 10px;
+	left: 0px;
+	padding:0px 10px;
+	color: white;
+	font-size: 18px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.fb-page{
+	margin:10px 0px;
+}
+
+subscribe{
+	margin:25px 0px;
+	position: relative;
+	
+}
+
+subscribe p{
+	font-size: 16px;
+	font-weight: bold;
+	margin:10px 0px;
+	color: #858585;
+	font-family: 'Quicksand';
+	text-align: justify;
+	margin-top: 20px;
+}
+
+subscribe input{
+	border:2px solid #898686;
+	border-radius: 20px;
+	width: 100%;
+	height: 30px;
+	font-size: 16px;
+	color: #898686;
+	margin: 10px 0px;
+	padding: 15px;
+	padding-right: 60px;
+	
+}
+
+subscribe button{
+	width: 70px;
+	height: 34px;
+	background:var(--true);
+	color: white;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	font-size: 18px;
+	font-weight: bold;
+	border:none;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+subscribe button:hover{
+	cursor: pointer;
+}
+
+subscribe input:focus{
+	outline: none;
+}
+
+items-wrap .rightnav-item{
+	width: 100%;
+	margin: 8px 0px;
+	margin-left: -2px;
+}
+
+items-wrap .rightnav-item img{
+	height: 220px;
+}
+
+@media screen and (min-width:1199px){
+	
+
+}
+
+@media screen and (max-width:769px){
+	right-nav{
+		width: 100%;
+		padding: 5px;
+	}
+
+	popular{
+		margin:0px;
+	}
+
+	pop-wrap{
+		display: flex;
+		flex-wrap:wrap;
+		margin: 0px;
+	}
+	right-head{
+		font-size: 25px;
+		text-align: left;
+
+	}
+
+	right-head::after{
+		display: none;
+	}
+
+	.pop-item{
+		width: 46%;
+    	margin: 10px 10px;
+    
+	}
+
+	.fb-page{
+		width: 100%;
+	}
+}
+
+
+
+@media screen and (max-width:426px){
+	.pop-item{
+		width: 100%;
+		height: 240px;
+	}
+}

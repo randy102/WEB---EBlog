@@ -1,0 +1,294 @@
+
+other-head{
+	margin: 22px 0px;
+	text-align: center;
+	padding: 12px 0px;
+	font-family: 'Jua', sans-serif;
+	font-size: 36px;
+	font-weight: bold;
+	background: var(--true);
+	color: var(--white);
+	box-shadow: 0px 6px 15px 0px #c1bbbb;
+}
+
+/*Categories*/
+cate-list{
+	width: 100%;
+}
+
+cate-list .cate-item{
+	width: 100%;
+	text-align: center;
+	padding: 20px 0px;
+	color: var(--true);
+	font-size: 22px;
+	font-family: "Quicksand";
+	border-left: 5px solid var(--bright);
+	border-right: 5px solid var(--bright);
+	background: white;
+	margin: 15px 0px;
+}
+
+cate-list .cate-item:hover{
+	background: var(--bright);
+	color: white;
+}
+
+paginate{
+	display: flex;
+	flex-direction:row;
+	text-align: center;
+}
+
+paginate .pag-item{
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 35px;
+	font-family: "Quicksand";
+	font-size: 18px;
+	font-weight: bold;
+	color: var(--true);
+	border-radius: 50%;
+	border:2px solid var(--true);
+	margin: 0px 5px;
+}
+
+paginate .active{
+	background: var(--true);
+	color: white;
+}
+/*Categories*/
+
+/*Contact*/
+contact{
+	display: flex;
+	flex-direction:column;
+	background: white;
+	padding: 20px;
+}
+
+contact contact-item{
+	width: 100%;
+	padding: 10px 50px;
+	font-family: "Quicksand";
+	font-size: 20px;
+	display: flex;
+	flex-direction:row;
+}
+
+contact-item contact-head{
+	font-weight: bold;
+	color: var(--true);
+	width: 50%;
+	border-right: 1px solid #bfbfbf;
+}
+
+contact-item contact-content{
+	padding-left: 20px;
+	color: var(--black);
+	text-align: right;
+	width: 50%;
+}
+
+contact-content a{
+	color: var(--bright);
+}
+/*Contact*/
+
+/*About*/
+page-intro{
+	margin-bottom: 30px;
+	padding: 20px;
+	padding-bottom: 30px;
+	color: var(--black);
+	font-family: "Quicksand";
+	font-size: 18px;
+	text-align: justify;
+	border-bottom: 1px solid #b2b2b2;
+	background: white;
+}
+
+page-intro img{
+	float: left;
+	margin-right: 20px;
+	width: 100px;
+}
+
+author-intro{
+	display: flex;
+	flex-direction: column;
+	margin: 10px 0px;
+	font-family: "Quicksand";
+}
+
+au-item{
+	width: 100%;
+	box-shadow: 0px 0px 15px 1px #cdcdcd;
+	margin: 10px 0px;
+	background: white;
+	border-top-right-radius: 100px;
+	border-bottom-right-radius: 100px;
+	border-left: 5px solid var(--bright);
+}
+
+
+au-item img{
+	width: 115px;
+	height: 115px;
+	float: left;
+}
+
+au-item au-name{
+	float: left;
+	font-weight: bold;
+	font-size: 35px;
+	padding: 30px 20px;
+	margin-left: 30px;
+}
+
+au-contact{
+	float: right;
+}
+
+au-contact a{
+	width: 150px;
+	padding: 25px;
+	text-align: center;
+	color: white;
+	background: var(--bright);
+	border-radius: 100px;
+	margin: 20px;
+}
+
+au-contact a:hover{
+	background: white;
+	color: var(--bright);
+	border: 1px solid var(--bright);
+} 
+/*About*/
+
+/*Author*/
+quote{
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+	font-style: italic;
+	color: var(--true);
+	font-family: "Pacifico";
+	margin: 15px 0px;
+}
+
+avatar{
+	width: 100%;
+	margin: 10px 0px;
+	position: relative;
+}
+
+avatar img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 1px solid #b6b6b6;
+	padding: 5px;
+	margin: 10px auto;
+	display: block;
+}
+
+avatar name{
+	width: 200px;
+	margin: 5px auto;
+	font-family: "Quicksand";
+	font-size: 25px;
+	font-weight: bold;
+	padding: 10px 0px;
+	text-align: center;
+	border: 2px solid var(--true);
+	color: var(--true);
+}
+
+avatar::before,avatar::after{
+	width: 30%;
+    height: 1px;
+    background: #9e9c9c;
+    position: absolute;
+    top: 50%;
+    content: "";
+
+}
+
+avatar::before{
+	left: 40px;
+}
+
+avatar::after{
+	right: 40px;
+}
+
+au-detail{
+	width: 100%;
+	margin: 20px 0px;
+	font-family: "Quicksand";
+}
+
+au-detail item{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	margin: 10px 0px;
+}
+
+au-detail left{
+	width: 50%;
+	padding: 10px 20px;
+	color: var(--white);
+	background: var(--true);
+	font-size: 20px;
+	font-weight: bold;
+}
+
+au-detail right{
+	width: 50%;
+	padding: 10px 20px;
+	color: var(--true);
+	font-size: 20px;
+	border: 1px solid var(--true);
+}
+
+au-detail a{
+	font-weight: bold;
+}
+
+au-detail a:hover{
+	text-decoration: underline;
+}
+
+au-self{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 40px 0px;
+	font-family: "Quicksand";
+}
+
+au-self top{
+	width: 100%;
+	padding: 20px 0px;
+	text-align: center;
+	color: var(--white);
+	background: var(--true);
+	font-size: 20px;
+	font-weight: bold;
+	
+}
+
+au-self bott{
+	width: 100%;
+	padding: 20px;
+	text-align: justify;
+	color: var(--true);
+	font-size: 20px;
+	border: 1px solid var(--true);
+	
+}
+/*Author*/

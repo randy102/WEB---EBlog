@@ -1,0 +1,212 @@
+@keyframes top-quote{
+	0%{opacity: 1; }
+	50%{opacity: 0.8;}
+	75%{opacity: 0.9;}
+}
+
+social{
+	width: 100%;
+	flex-direction: row;
+	height: 50px;
+	background: var(--true);
+	justify-content: right;
+}
+
+social a{
+	color: var(--white);
+	padding: 15px 20px;
+	font-size: 18px;
+	float: left;
+}
+
+social a:hover{
+	color: var(--bright);
+}
+
+social #top-login{
+	float: right;
+}
+
+social #top-login:hover{
+	background: var(--hard);
+}
+
+logo{
+	width: 200px;
+	padding: 10px 0px;
+	position: absolute;
+	left: 35px;
+	top: 10px;
+	cursor: pointer;
+}
+
+logo-wrap{
+	display: flex;
+	flex-direction: row;
+	margin: 0px auto;
+	position: relative;
+}
+
+logo img{
+	width: 50px;
+	height: 50px;
+}
+
+logo logo-text{
+	font-family: "Pacifico";
+	font-size: 40px;
+	font-weight: bold;
+	color: var(--bright);
+	margin-left: 6px ;
+	margin-top: -15px;
+}
+
+logo-text blog-text{
+	color: var(--true);
+	position: absolute;
+	top: -15px;
+	left: 148px;
+	font-size: 40px;
+}
+
+
+nav{
+	background: url('/Public/img/background.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 1000px;
+	width: 100%;
+	height: 600px;
+	background-position: 0px -100px;
+	box-shadow: 0px 2px 15px 0px #bdbdbd;
+	position: relative;
+}
+
+nav blur{
+	width: 100%;
+	height: 120px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	background-image: linear-gradient(#ffffff00,#e9ebee);
+}
+
+menu-wrap{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	width: 100%;
+	flex-direction: row;
+	justify-content: center;
+	padding: 25px 10px;
+	z-index: 9999;
+}
+
+menu-wrap a{
+	color: #8dadcb;
+	font-size: 18px;
+	font-family: "Quicksand";
+	padding: 7px 45px;
+	font-weight: bold;
+	float: right;
+}
+
+menu-wrap a:hover{
+	background: white;
+	transition: background 0.2s;
+}
+
+nav-quote{
+	margin: 0px auto;
+	padding-top: 260px;
+	color: #ffffffed;
+	font-family: "Pacifico";
+	text-align: center;
+	font-size: 48px;
+	animation: top-quote 5s infinite;
+}
+
+.menu-scroll{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: white;
+	z-index: 999;
+	box-shadow: 0px 1px 5px 0px #d1d1d1;
+	padding: 12px 10px;
+}
+
+.menu-scroll a:hover{
+	background: #00000012;
+	transition: background 0.2s;
+}
+
+.menu-scroll logo{
+	transform: scale(0.7);
+	top: -5px;
+}
+
+@media screen and (max-width:1025px){
+	nav{
+		height: 500px;
+		background-position: 0px -200px;
+	}
+	nav-quote{
+		padding-top: 200px;
+		font-size: 44px;
+	}
+}
+
+@media screen and (max-width:769px){
+	menu-wrap{
+		flex-direction: column;
+		padding: 0px;
+	}
+
+	menu-wrap a{
+		width: 100%;
+		padding: 10px 0px;
+		text-align: center;
+		font-size: 16px;
+	}
+
+	nav-quote{
+		display: none;
+	}
+
+	nav blur{
+		display: none;
+	}
+
+	nav{
+		background: white;
+		height: 250px;
+	}
+
+	logo{
+		position: static;
+		width: 100%;
+		border-bottom: 1px solid #d1d1d1;
+		padding: 10px 0px;
+		padding-bottom: 8px; 
+	}
+
+	logo-wrap{
+		width: 100%;
+		padding-left: 20px;
+	}
+
+	logo-text blog-text{
+		left: 165px;
+	}
+}
+
+@media screen and (max-width:425px){
+	nav{
+		
+		
+	}
+
+
+}
+

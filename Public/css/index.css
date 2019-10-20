@@ -1,0 +1,72 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+*{
+	box-sizing: border-box;
+	display: block;
+	padding: 0px;
+	margin:0px;
+	
+}
+
+html body{
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: 0;
+    background: #e9ebee;
+    font-family: "Quicksand";
+  }
+
+head{
+	display: none;
+}
+
+script{
+	display: none;
+}
+
+body{
+	margin:0px;
+}
+
+a{
+	text-decoration: none;
+}
+
+input:focus,textarea:focus,select:focus{
+	outline: none;
+}
+
+table{
+    display: table;
+}
+
+thead, tbody{
+	display: table-header-group;
+}
+
+tr{
+	display: table-row;
+}
+
+th,td{
+	display: table-cell;
+}
+
+
+:root{
+	--main-white: #e8e8e8a6;
+	--main-blue:  #e2f0ff;
+	--main-black:  #434343;
+	--extra-blue: #bed5e1;
+	--extra-black: #7b7b7b;
+	--white:#f3faff;
+	--bright:#57b3f9;
+	--true:#426e85;
+	--hard:#1c516c;
+}
+
